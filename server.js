@@ -10,6 +10,10 @@ import Appointment from "./models/Appointment.js";
 import Feedback from "./models/Feedback.js";
 import authRoutes from "./routes/auth.js";
 import userRoutes from "./routes/users.js";
+import doctorRoutes from "./routes/doctors.js";
+import patientRoutes from "./routes/patients.js";
+import appointmentRoutes from "./routes/appointments.js";
+import feedbackRoutes from "./routes/feedback.js";
 
 
 dotenv.config();
@@ -162,3 +166,7 @@ app.listen(PORT, () => {
 
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
+app.use("/api/doctors", doctorRoutes);
+app.use("/api/patients", patientRoutes);
+app.use("/api/appointments", appointmentRoutes);
+app.use("/api/feedback", feedbackRoutes);

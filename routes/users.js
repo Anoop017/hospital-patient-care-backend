@@ -23,7 +23,7 @@ router.get("/check-role", authMiddleware, (req, res) => {
 // @route   GET /api/users/logout
 router.get("/logout", (req, res) => {
   // In stateless JWT, logout is handled on the frontend
-  res.json({ message: "Logout successful (handled on client)" });
+  res.json({ message: "Logout successful" });
 });
 
 export default router;
